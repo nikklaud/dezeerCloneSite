@@ -1,73 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 
-:root{
-    --bg_color: #212529;
-    --btn_color1: #6841F2;
-    --btn_color2: #886BF2
+:root {
+  --bg_color: #212529;
+  --btn_color1: #6841f2;
+  --btn_color2: #886bf2;
 }
 
-header {
-    border-bottom: 1px solid #ccc;
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #000;
+  color: #fff;
 }
-
-.logo{
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.navbar {
+  background-color: #000;
 }
-
-.nik_btn { 
-    border: none; 
-    border-radius: 50px;
+.navbar-brand img {
+  height: 30px;
 }
-
-.log_in {
-    background-color: var(--btn_color1);
-    border: none;
+.navbar-nav .nav-link {
+  color: #fff;
+  margin-right: 20px;
 }
-
-.log_in:hover {
-    background-color: var(--btn_color2);
+.navbar-nav .nav-link:hover {
+  color: #9b59b6;
 }
-
-.sing_in {
-    background-color: var(--btn_color2);
-    border: none;
+.btn-outline-light {
+  border-color: #9b59b6;
+  color: #9b59b6;
 }
-
-.sing_in:hover {
-    background-color: var(--btn_color1);
+.btn-outline-light:hover {
+  background-color: #9b59b6;
+  color: #fff;
 }
-
-.sidebar {
-    height: 100vh;
-    background-color: #f8f9fa;
+.header {
+  text-align: center;
+  padding: 50px 20px;
 }
-
-.nav-link.active {
-    font-weight: bold;
+.header h1 {
+  font-size: 3rem;
+  font-weight: 700;
 }
-
-.music-card {
-    width: 100%;
-    height: 100px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
+.header p {
+  font-size: 1.25rem;
 }
-
-.footer-player {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+.alert {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  margin: 20px 0;
+}
+.alert i {
+  margin-right: 10px;
+}
+.plans {
+  background-color: #9b59b6;
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
+}
+.plans::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI4MCIgaGVpZ2h0PSI1MCIgdmlld0JveD0iMCAwIDEyODAgNTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMGgxMjgwdjUwSDB6IiBmaWxsPSIjOWI1OWI2Ii8+PHBhdGggZD0iTTAgMGgxMjgwdjUwSDB6IiBmaWxsPSIjOWI1OWI2IiBvcGFjaXR5PSIuNSIvPjwvc3ZnPg==")
+    repeat-x;
+}
+.plan-card {
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+.plan-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.plan-card p {
+  font-size: 1rem;
+}
+.plan-card .btn {
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+.plan-card .btn:hover {
+  background-color: #333;
+}
+.gift-card {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: transparent;
+}
+.gift-card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.gift-card p {
+  font-size: 1.25rem;
+}
+.gift-card .btn {
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+.gift-card .btn:hover {
+  background-color: #333;
+}
+.footer {
+  background-color: #000;
+  padding: 50px 20px;
+  color: #fff;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer .social-icons i {
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+.footer .social-icons i:hover {
+  color: #9b59b6;
 }
