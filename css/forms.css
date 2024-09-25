@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-<<<<<<< HEAD
+
 
 * {
     margin: 0;    
@@ -152,4 +152,9 @@ form h1 {    color: #FFFFFF;
     text-decoration: none;}
 .register-link a:hover {
     text-decoration: underline;}
->>>>>>> bc1557cf9220d7a101489404e5a82b66045d270a
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+  }
