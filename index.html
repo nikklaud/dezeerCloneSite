@@ -3,346 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Fridujo</title>
+    <title>Fridujo Offer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            padding: 1rem 2rem;
+        }
+        .navbar-brand {
+            color: #6200ea;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link {
+            color: white;
+            margin-right: 1rem;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #6200ea;
+        }
+        .btn-signup {
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+        .btn-signup:hover {
+            background-color: #5a00d0;
+        }
+        .header {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .alert-box, .trial-box {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            border-left: 5px solid #6200ea;
+        }
+        .alert-icon, .trial-icon {
+            margin-right: 1rem;
+            font-size: 1.5rem;
+        }
+        .pricing-toggle {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .pricing-toggle .btn {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            margin: 0 0.5rem;
+        }
+        .pricing-toggle .btn:hover {
+            background-color: #6200ea;
+        }
+        .pricing-toggle .btn.active {
+            background-color: #6200ea;
+        }
+        .pricing-card {
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .pricing-card h3 {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .pricing-card .price {
+            font-size: 1.25rem;
+            color: gray;
+            margin-bottom: 1rem;
+        }
+        .pricing-card .btn {
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            padding: 0.5rem 2rem;
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .footer h5 {
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer .social-icons a {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        .footer .bottom-bar {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark nik-nav">
-            <div class="container-fluid ">
-                <a class="navbar-brand logo" href="index.html">FRIDUJO</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"
-                aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarID">
-                    <div class="navbar-nav ms-auto nik_nav">
-                        <a class="nav-link active" aria-current="page" href="index.html">Тарифы</a>
-                        <a class="nav-link active" aria-current="page" href="features.html">Возможности</a>
-                        <a class="nav-link active" aria-current="page" href="music.html">Музыка</a>
-                        <button class="btn text-light nik_btn log_in ms-2"><a href="sign-up.html">Войти</a></button>
-                        <button class="btn text-light nik_btn sing_in ms-2"><a href="sign-in.html">Зарегестрироваться</a></button>
-                        
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-heart"></i> FRIDUJO
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Plans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Log in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-signup" href="#">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="header">
+        <h1>Get 1 month of Premium free</h1>
+    </div>
+
+    <div class="container">
+        <div class="alert-box">
+            <i class="fas fa-exclamation-circle alert-icon"></i>
+            <span class="alert-text">Fridujo Free is not available in your country. Please choose an offer and start listening.</span>
+        </div>
+        <div class="trial-box">
+            <i class="fas fa-bell trial-icon"></i>
+            <span class="trial-text">A stress-free trial<br>We will remind you 7 days before your trial ends.</span>
+        </div>
+        <div class="pricing-toggle">
+            <button class="btn active">Monthly</button>
+            <button class="btn">Annual -25%</button>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="pricing-card">
+            <h3>PREMIUM</h3>
+            <p>1 month free<br>then $11.99/month.</p>
+            <button class="btn">Try for free</button>
+        </div>
+        <div class="pricing-card">
+            <h3>FAMILY</h3>
+            <p>1 month free<br>then $19.99/month.</p>
+            <button class="btn">Try for free</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">For the Record</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Communities</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">For Artists</a></li>
+                        <li><a href="#">Developers</a></li>
+                        <li><a href="#">Advertising</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Vendors</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Useful Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Web Player</a></li>
+                        <li><a href="#">Free Mobile App</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end align-items-center">
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <main>
-        <div class="container text-light text-center">
-            <h1>
-             Получите 1 месяц Premium бесплатно
-            </h1>
-            <p>
-             Подписка Deezer Free недоступна в вашей стране. Выберите другую подписку и начните слушать музыку.
-            </p>
-            <p>
-             Беззаботный пробный период. Мы напомним вам за 7 дней до окончания пробного периода.
-            </p>
-           </div>
-
-           <section class="plans">
-            <div class="container">
-             <div class="btn-group" role="group">
-              <button class="btn btn-outline-dark" type="button">
-               Ежемесячная подписка
-              </button>
-              <button class="btn btn-outline-dark" type="button">
-               Годовая подписка -25%
-              </button>
-             </div>
-             <div class="row">
-              <div class="col-md-6">
-               <div class="plan-card">
-                <h3>
-                 PREMIUM
-                </h3>
-                <p>
-                 1 месяц бесплатно затем $11.99 в месяц.
-                </p>
-                <button class="btn btn-dark">
-                 Попробовать бесплатно
-                </button>
-                <p>
-                 <a href="#">
-                  Узнать больше
-                 </a>
-                </p>
-               </div>
-              </div>
-              <div class="col-md-6">
-               <div class="plan-card">
-                <h3>
-                 FAMILY
-                </h3>
-                <p>
-                 1 месяц бесплатно затем $19.99 в месяц.
-                </p>
-                <button class="btn btn-dark">
-                 Попробовать бесплатно
-                </button>
-                <p>
-                 <a href="#">
-                  Узнать больше
-                 </a>
-                </p>
-               </div>
-              </div>
-             </div>
+            <div class="bottom-bar">
+                <p>&copy; 2024 Fridujo</p>
+                <div>
+                    <a href="#">Legal</a> |
+                    <a href="#">Privacy Center</a> |
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Cookies</a> |
+                    <a href="#">About Ads</a>
+                </div>
             </div>
-           </section>
-           <section class="gift-card">
-            <div class="container text-dark">
-             <h2>
-              Подарочный сертификат
-             </h2>
-             <p>
-              Что может быть лучше, чем 3, 6 или 12 месяцев музыки без ограничений?
-             </p>
-             <button class="btn btn-dark">
-              Приобрести подарочный сертификат
-             </button>
-             <button class="btn btn-outline-dark">
-              Активировать подарочный сертификат
-             </button>
-            </div>
-           </section>
-    </main>
-    <footer class="footer">
-            <div class="container">
-             <div class="row footer-links">
-              <div class="col-md-2">
-               <h5>
-                Полезные ссылки
-               </h5>
-               <ul>
-                <li>
-                 <a href="#">
-                  Загрузить приложение Deezer
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Предложения
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Отзывы
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Использовать промокод
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Купить подарочный сертификат
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Вопросы и ответы
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Связаться с Deezer
-                 </a>
-                </li>
-               </ul>
-              </div>
-              <div class="col-md-2">
-               <h5>
-                Возможности
-               </h5>
-               <ul>
-                <li>
-                 <a href="#">
-                  Flow
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Определитель песен
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Перенести музыку
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Слушать с текстом
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Режим офлайн
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Качество звука HiFi
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Совместный плейлист
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Музыкальный квиз
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Совместимые устройства
-                 </a>
-                </li>
-               </ul>
-              </div>
-              <div class="col-md-2">
-               <h5>
-                Live the Music
-               </h5>
-               <ul>
-                <li>
-                 <a href="#">
-                  Смотреть каталог
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Любимые песни
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Новинки
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  The Backstage - блог Deezer
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Deezer Community
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Purple Club
-                 </a>
-                </li>
-               </ul>
-              </div>
-              <div class="col-md-2">
-               <h5>
-                О нас
-               </h5>
-               <ul>
-                <li>
-                 <a href="#">
-                  Пресса и новости
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Ориентированная на исполнителя система оплаты (ACPS)
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Deezer for Creators
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Инвесторы
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Партнерство с брендами
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Вакансии
-                 </a>
-                </li>
-               </ul>
-              </div>
-              <div class="col-md-2">
-               <h5>
-                Юридическая информация
-               </h5>
-               <ul>
-                <li>
-                 <a href="#">
-                  Общие условия пользования
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Политика конфиденциальности
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Файлы cookie
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Сведения о программном обеспечении с открытым исходным кодом
-                 </a>
-                </li>
-                <li>
-                 <a href="#">
-                  Политика сообщения об уязвимости
-                 </a>
-                </li>
-               </ul>
-              </div>
-             </div>
-             <div class="row">
-              <div class="col-md-12 text-center">
-               <div class="social-icons">
-                <a href="#">
-                 <i class="fab fa-facebook-f">
-                 </i>
-                </a>
-                <a href="#">
-                 <i class="fab fa-instagram">
-                 </i>
-                </a>
-                <a href="#">
-                 <i class="fab fa-twitter">
-                 </i>
-                </a>
-                <a href="#">
-                 <i class="fab fa-youtube">
-                 </i>
-                </a>
-               </div>
-               <div class="footer-bottom">
-                <p>
-                 © 2024 Deezer Русский
-                </p>
-               </div>
-              </div>
-             </div>
-            </div>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-dC3pWQxj5sd32uv8PQTIc1IP+MCczNdO58XadABVDLB44JzY54y3y93KzQuAT+Rj" crossorigin="anonymous"></script>
 </body>
 </html>
