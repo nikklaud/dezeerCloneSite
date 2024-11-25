@@ -1,0 +1,126 @@
+body {
+    background-color: #0d0d0d;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    padding: 1rem 2rem;
+}
+.navbar-brand {
+    color: #6200ea;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 1rem;
+}
+.navbar-nav .nav-link:hover {
+    color: #6200ea;
+}
+.btn-signup {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+.btn-signup:hover {
+    background-color: #5a00d0;
+}
+.header {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.alert-box, .trial-box {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    border-left: 5px solid #6200ea;
+}
+.alert-icon, .trial-icon {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+.pricing-toggle {
+    text-align: center;
+    margin: 2rem 0;
+}
+.pricing-toggle .btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+}
+.pricing-toggle .btn:hover {
+    background-color: #6200ea;
+}
+.pricing-toggle .btn.active {
+    background-color: #6200ea;
+}
+.pricing-card {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.pricing-card h3 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.pricing-card .price {
+    font-size: 1.25rem;
+    color: gray;
+    margin-bottom: 1rem;
+}
+.pricing-card .btn {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+}
+.footer {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 40px 0;
+    text-align: center;
+}
+.footer h5 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer .social-icons a {
+    margin-right: 15px;
+    font-size: 20px;
+}
+.footer .bottom-bar {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

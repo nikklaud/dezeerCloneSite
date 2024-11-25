@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Rubik+Mono+One&display=swap");
+
+* {
+  font-family: "Martian Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.sidebar {
+  background-color: #f5f5f5;
+  padding: 20px;
+  height: 100vh;
+}
+.sidebar a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 18px;
+}
+.sidebar a:hover {
+  text-decoration: underline;
+}
+.sidebar .playlist {
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.sidebar .playlist button {
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+.main-content {
+  padding: 20px;
+}
+.main-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.main-content h2 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+.category-button {
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+.footer {
+  background-color: #f5f5f5;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+.footer .song-info {
+  display: flex;
+  align-items: center;
+}
+.footer .song-info div {
+  margin-left: 10px;
+}
+.footer .controls {
+  display: flex;
+  align-items: center;
+}
+.footer .controls i {
+  font-size: 20px;
+  margin: 0 10px;
+}

@@ -1,0 +1,46 @@
+{% extends "../base.html" %}
+{% load static %}
+
+{% block title %}
+    Music
+{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/music.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="d-flex">
+    <div class="sidebar">
+      <h1><a href="#">FRIDUJO</a></h1>
+      <a href="#">
+        <i class="fas fa-home"> </i>
+        Главная
+      </a>
+      <a href="#">
+        <i class="fas fa-search"> </i>
+        Исследуйте
+      </a>
+    </div>
+    <div class="main-content flex-grow-1">
+      <h1>Популярные треки</h1>
+      <div class="d-flex flex-wrap">
+        {% for track in tracks %}
+        <div class="card m-2" style="width: 18rem;">
+          <img
+            src="{{ track.album.cover }}"
+            class="card-img-top"
+            alt="{{ track.title }}"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ track.title }}</h5>
+            <p class="card-text">Исполнитель: {{ track.artist.name }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
